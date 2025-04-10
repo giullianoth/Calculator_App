@@ -1,0 +1,352 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+:root {
+    /* COLORS */
+    /* Theme 1 */
+    --color-very-dark-desaturated-blue-1: hsl(222, 26%, 31%);
+    --color-very-dark-desaturated-blue-2: hsl(223, 31%, 20%);
+    --color-very-dark-desaturated-blue-3: hsl(224, 36%, 15%);
+
+    --color-desaturated-dark-blue-1: hsl(225, 21%, 49%);
+    --color-desaturated-dark-blue-1-hover: hsl(224, 51%, 76%);
+    --color-desaturated-dark-blue-2: hsl(224, 28%, 35%);
+
+    --color-red: hsl(6, 63%, 50%);
+    --color-red-hover: hsl(6, 93%, 67%);
+    --color-dark-red: hsl(6, 70%, 34%);
+
+    --color-light-grayish-orange: hsl(30, 25%, 89%);
+    --color-grayish-orange: hsl(28, 16%, 65%);
+
+    --color-very-dark-grayish-blue: hsl(221, 14%, 31%);
+    --color-white: hsl(0, 0%, 100%);
+    
+    /* Theme 2 */
+    --color-light-gray: hsl(0, 0%, 90%);
+    --color-grayish-red: hsl(0, 5%, 81%);
+    --color-very-light-gray: hsl(0, 0%, 93%);
+
+    --color-dark-moderate-cyan: hsl(185, 42%, 37%);
+    --color-dark-moderate-cyan-hover: hsl(185, 41%, 56%);
+    --color-very-dark-cyan: hsl(185, 58%, 25%);
+
+    --color-orange: hsl(25, 98%, 40%);
+    --color-orange-hover: hsl(25, 100%, 61%);
+    --color-dark-orange: hsl(25, 99%, 27%);
+
+    --color-light-grayish-yellow: hsl(45, 7%, 89%);
+    --color-dark-grayish-orange: hsl(35, 11%, 61%);
+
+    --color-very-dark-grayish-yellow: hsl(60, 10%, 19%);
+    
+    /* Theme 3 */
+    --color-very-dark-violet-1: hsl(268, 75%, 9%);
+    --color-very-dark-violet-2: hsl(268, 71%, 12%);
+
+    --color-dark-violet: hsl(281, 89%, 26%);
+    --color-dark-violet-hover: hsl(268, 54%, 44%);
+    --color-vivid-magenta: hsl(285, 91%, 52%);
+
+    --color-pure-cyan: hsl(176, 100%, 44%);
+    --color-pure-cyan-hover: hsl(177, 100%, 79%);
+    --color-soft-cyan: hsl(177, 92%, 70%);
+
+    --color-very-dark-violet-3: hsl(268, 47%, 21%);
+    --color-very-dark-violet-3-hover: hsl(280, 56%, 44%);
+    --color-dark-magenta: hsl(290, 70%, 36%);
+
+    --color-light-yellow: hsl(52, 100%, 62%);
+    --color-very-dark-blue: hsl(198, 20%, 13%);
+
+    /* TYPOGRAPHY */
+    --cont-size-number: 32px;
+    --font-league-spartan: "League Spartan", sans-serif;
+    --font-weigth: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-league-spartan);
+    font-size: var(--cont-size-number);
+    font-weight: var(--font-weigth);
+    min-height: 100vh;
+    transition: 0.3s;
+    padding-inline: 20px;
+}
+
+body.theme-1 {
+    background-color: var(--color-very-dark-desaturated-blue-1);
+
+    --header-text: var(--color-white);
+
+    --background-switch: var(--color-very-dark-desaturated-blue-2);
+    --background-switch-button: var(--color-red);
+    --position-left-switch-button: 0;
+    --position-transform-switch-button: 0;
+
+    --background-display: var(--color-very-dark-desaturated-blue-3);
+    --text-display: var(--color-white);
+
+    --background-keypad: var(--color-very-dark-desaturated-blue-2);
+
+    --background-button-primary: var(--color-light-grayish-orange);
+    --background-button-primary-hover: var(--color-white);
+    --shadow-button-primary: var(--color-grayish-orange);
+    --text-button-primary: var(--color-very-dark-grayish-blue);
+
+    --background-button-secondary: var(--color-desaturated-dark-blue-1);
+    --background-button-secondary-hover: var(--color-desaturated-dark-blue-1-hover);
+    --shadow-button-secondary: var(--color-desaturated-dark-blue-2);
+    --text-button-secondary: var(--color-white);
+
+    --background-button-tertiary: var(--color-red);
+    --background-button-tertiary-hover: var(--color-red-hover);
+    --shadow-button-tertiary: var(--color-dark-red);
+    --text-button-tertiary: var(--color-white);
+
+    --text-footer: var(--color-very-dark-desaturated-blue-3);
+    --text-footer-link: var(--color-red);
+}
+
+body.theme-2 {
+    background-color: var(--color-light-gray);
+
+    --header-text: var(--color-very-dark-grayish-yellow);
+
+    --background-switch: var(--color-grayish-red);
+    --background-switch-button: var(--color-orange);
+    --position-left-switch-button: 50%;
+    --position-transform-switch-button: -50%;
+
+    --background-display: var(--color-very-light-gray);
+    --text-display: var(--color-very-dark-grayish-yellow);
+
+    --background-keypad: var(--color-grayish-red);
+
+    --background-button-primary: var(--color-light-grayish-yellow);
+    --background-button-primary-hover: var(--color-white);
+    --shadow-button-primary: var(--color-dark-grayish-orange);
+    --text-button-primary: var(--color-very-dark-grayish-yellow);
+
+    --background-button-secondary: var(--color-dark-moderate-cyan);
+    --background-button-secondary-hover: var(--color-dark-moderate-cyan-hover);
+    --shadow-button-secondary: var(--color-very-dark-cyan);
+    --text-button-secondary: var(--color-white);
+
+    --background-button-tertiary: var(--color-orange);
+    --background-button-tertiary-hover: var(--color-orange-hover);
+    --shadow-button-tertiary: var(--color-dark-orange);
+    --text-button-tertiary: var(--color-white);
+
+    --text-footer: var(--color-very-dark-grayish-yellow);
+    --text-footer-link: var(--color-orange);
+;}
+
+body.theme-3 {
+    background-color: var(--color-very-dark-violet-1);
+
+    --header-text: var(--color-light-yellow);
+
+    --background-switch: var(--color-very-dark-violet-2);
+    --background-switch-button: var(--color-pure-cyan);
+    --position-left-switch-button: 100%;
+    --position-transform-switch-button: -100%;
+
+    --background-display: var(--color-very-dark-violet-2);
+    --text-display: var(--color-light-yellow);
+
+    --background-keypad: var(--color-very-dark-violet-2);
+
+    --background-button-primary: var(--color-very-dark-violet-3);
+    --background-button-primary-hover: var(--color-dark-violet-hover);
+    --shadow-button-primary: var(--color-dark-magenta);
+    --text-button-primary: var(--color-light-yellow);
+
+    --background-button-secondary: var(--color-dark-violet);
+    --background-button-secondary-hover: var(--color-very-dark-violet-3-hover);
+    --shadow-button-secondary: var(--color-vivid-magenta);
+    --text-button-secondary: var(--color-white);
+
+    --background-button-tertiary: var(--color-pure-cyan);
+    --background-button-tertiary-hover: var(--color-pure-cyan-hover);
+    --shadow-button-tertiary: var(--color-soft-cyan);
+    --text-button-tertiary: var(--color-very-dark-blue);
+
+    --text-footer: var(--color-white);
+    --text-footer-link: var(--color-light-yellow);
+}
+
+main {
+    width: 100%;
+    max-width: 600px;
+}
+
+.header {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    color: var(--header-text);
+}
+
+.header h1 {
+    font-size: 0.8em;
+    text-transform: lowercase;
+}
+
+.header .theme {
+    font-size: 0.4em;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header .theme p {
+    text-transform: uppercase;
+}
+
+.header .switch-wrapper {
+    position: relative;
+}
+
+.header .theme-indicator {
+    position: absolute;
+    bottom: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header .switch {
+    width: 70px;
+    height: 24px;
+    border-radius: 26px;
+    padding: 4px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+    background-color: var(--background-switch);
+}
+
+.header .switch .button {
+    position: absolute;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    transition: 0.3s;
+    left: var(--position-left-switch-button);
+    transform: translateX(var(--position-transform-switch-button));
+    border: 4px solid var(--background-switch);
+    background-color: var(--background-switch-button);
+}
+
+.display {
+    width: 100%;
+    max-width: 600px;
+    padding: 30px 20px;
+    font-size: 1.3em;
+    text-align: right;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: var(--background-display);
+    color: var(--text-display);
+}
+
+.keypad {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    transition: 0.3s;
+    background-color: var(--background-keypad);
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    text-transform: uppercase;
+    background: none;
+    padding-block: 20px;
+    border: none;
+    border-bottom: 4px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button.last {
+    grid-column: span 2;
+}
+
+button.primary {
+    background-color: var(--background-button-primary);
+    border-color: var(--shadow-button-primary);
+    color: var(--text-button-primary);
+}
+
+button.primary:hover {
+    background-color: var(--background-button-primary-hover);
+}
+
+button.secondary {
+    background-color: var(--background-button-secondary);
+    border-color: var(--shadow-button-secondary);
+    color: var(--text-button-secondary);
+}
+
+button.secondary:hover {
+    background-color: var(--background-button-secondary-hover);
+}
+
+button.tertiary {
+    background-color: var(--background-button-tertiary);
+    border-color: var(--shadow-button-tertiary);
+    color: var(--text-button-tertiary);
+}
+
+button.tertiary:hover {
+    background-color: var(--background-button-tertiary-hover);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--text-footer);
+}
+
+.attribution a {
+    color: var(--text-footer-link);
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .header {
+        margin-top: 0;
+    }
+}
